@@ -18,7 +18,7 @@
 
 - we used result i prefer result but there came an operator ? that returns an error value from the current function for the caller to handle
 
-- oops i was wrong and right we kinda changed to use iflet contruct.
+- oops i was wrong and right i changed to use iflet contruct.
 
 ### splitting code into a lib crate
 
