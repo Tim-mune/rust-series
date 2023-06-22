@@ -25,3 +25,16 @@
 - create a lib.rs in src folder
 - create a module to write tests we use TDD to develop the application
 - in the process we learn about the is_ok method that is used on the result enum. Now, the method returns a boolean if the Ok is true and false if it finds the Err.
+
+### writing standard error instead of standard output
+
+<h6> stderr is used to output standard error</h6>
+- eprintln! macro is used to print to the standard error stream.
+
+- we read and write an output from the shell using > that means write to a specified file. best practices are to use stderr for err that my arise and stdout for standard output.
+
+# try runnung the code
+
+use cargo run -- [word to find] [file to read from (poem.txt)] > output.txt.
+
+- note the change on output.txt
