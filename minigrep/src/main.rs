@@ -1,12 +1,10 @@
-use core::panic;
 use minigrep::Config;
+use std::{env};
 
-use std::{env,fs};
-use std::error::Error;
 use std::process;
 
 fn main() {
-    let args:Vec<String>=env::args().collect();
+    // let args:Vec<String>=env::args().collect();
    
 //    let config=Config::build(&args);
 //    let mut query="".to_string();
@@ -19,7 +17,7 @@ fn main() {
 //        }
 //        Err(er)=>println!("theres an error {}",er),
 //    }
-let config=Config::build(&args).unwrap_or_else(|err|{
+let config=Config::build(env::args()).unwrap_or_else(|err|{
     eprintln!("Problem parsing  arguments: {err}");
     process::exit(1);
 });

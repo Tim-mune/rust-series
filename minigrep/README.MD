@@ -38,3 +38,7 @@
 use cargo run -- [word to find] [file to read from (poem.txt)] > output.txt.
 
 - note the change on output.txt
+
+* a refactor to use iterators
+
+- we use iterators instead of the expensive clone that makes allocates a new memory of an item in the heap.
